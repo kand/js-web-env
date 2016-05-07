@@ -1,0 +1,5 @@
+web:
+  build: .
+  dockerfile: Dockerfile
+  expose:
+    - "80"          # app port
