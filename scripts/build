@@ -1,0 +1,5 @@
+# Build docker container
+
+docker-compose \
+    -f resources/docker/docker-compose.yml \
+    build

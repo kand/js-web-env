@@ -1,0 +1,6 @@
+# Serve via docker.
+
+./scripts/build && \
+docker-compose \
+    -f resources/docker/docker-compose.yml \
+    up

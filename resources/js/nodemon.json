@@ -1,0 +1,9 @@
+{
+  "verbose":  true,
+  "ext": "js,jsx,hbs",
+  "events": {
+    "start": "webpack",
+    "restart": "webpack"
+  },
+  "ignore": ["public/*"]
+}
