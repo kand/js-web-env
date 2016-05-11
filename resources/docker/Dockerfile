@@ -4,12 +4,11 @@ ENV DIR_SITE /site
 RUN mkdir -p $DIR_SITE
 WORKDIR $DIR_SITE
 
-COPY resources/js/package.json ./
+COPY resources/site/package.json ./
 RUN npm install
 ENV PATH $PATH:$DIR_SITE/node_modules/.bin/
 
-COPY resources/js/ ./
-COPY resources/shell ./
+COPY resources/site/ ./
 RUN chmod +x ./*.sh
 
 ENV DIR_PUBLIC $DIR_SITE/public

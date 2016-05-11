@@ -2,10 +2,12 @@
 Experiments in a node environment.
 
 ## Development
-To run:
-```bash
-$ ./start
-```
+1. Install Docker for Windows.
+2. Run:
+  ```bash
+  $ ./start
+  ```
+3. Access server at http://docker:80.
 
 ## Notes
 ### Docker Image Construction
@@ -19,4 +21,4 @@ $ ./start
 Even with Docker for Windows beta, nodemon requires the `legacyWatch` option to properly poll for changes in a mounted volume.
 
 ### Not Using `package.json` `scripts`
-Making modifications to `package.json` is expensive in terms of build time via Docker. To save time adding/testing node-related scripts, these have been added to the `shell` mounted directory and `/site/node_modules/.bin` has been added to the Docker image's `$PATH`.
+Making modifications to `package.json` is expensive in terms of build time via Docker. To save time adding/testing node-related scripts, these have been added to the `site` mounted directory and `/site/node_modules/.bin` has been added to the Docker image's `$PATH`.
