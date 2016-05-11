@@ -1,0 +1,22 @@
+# JS Web Env
+Experiments in a node environment.
+
+## Development
+To run:
+```bash
+$ ./scripts/serve
+```
+
+## Notes
+### Docker Image Construction
+#### Layout
+
+- `/site` - all files provided by this project should be mounted somewhere in this directory. Project specification files and shell files needed to run the project inside the Docker container are also located here.
+  - `./public` - public assets and other compiled files that will be viewable by the public.
+  - `./src` - source files that are compiled/processed before use elsewhere.
+
+### nodemon `legacyWatch`
+Even with Docker for Windows beta, nodemon requires the `legacyWatch` option to properly poll for changes in a mounted volume.
+
+### Not Using `package.json` `scripts`
+Making modifications to `package.json` is expensive in terms of build time via Docker. To save time adding/testing node-related scripts, these have been added to the `shell` mounted directory and `/site/node_modules/.bin` has been added to the Docker image's `$PATH`.
