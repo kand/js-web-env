@@ -4,7 +4,7 @@ Experiments in a node environment.
 ## Development
 To run:
 ```bash
-$ ./scripts/serve
+$ ./start
 ```
 
 ## Notes
