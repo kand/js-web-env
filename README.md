@@ -3,11 +3,8 @@ Experiments in a node environment.
 
 ## Development
 1. Install Docker for Windows.
-2. Run:
-  ```bash
-  $ ./start
-  ```
-3. Access server at http://docker:80.
+2. Run: `./start`.
+3. Access server at [http://docker:80](http://docker:80).
 
 ## Notes
 ### Docker Image Construction
