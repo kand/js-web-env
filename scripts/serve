@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Serve via docker.
 
 ./scripts/build && \

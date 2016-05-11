@@ -7,7 +7,7 @@ let Layout = React.createClass({
 
   render () {
     return (
-      <div>Hello wardl</div>
+      <div>Hello garbage</div>
     );
   }
 });

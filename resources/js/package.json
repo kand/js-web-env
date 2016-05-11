@@ -4,12 +4,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "build": "webpack --bail",
-    "test": "karma start",
-    "debug": "nodemon server",
-    "run": "npm run build && node server"
-  },
   "author": "Andrew Kos",
   "license": "ISC",
   "dependencies": {
